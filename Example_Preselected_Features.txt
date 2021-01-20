@@ -1,0 +1,6 @@
+sensitive_selected	sensitive_not_selected	resistant_selected	resistant_not_selected
+f_1	1	0	0	0
+f_2	0	0	1	0
+#Delete the rows starting with '#' if you want to use this file as an example file.
+#First row contains column headings (keep this order!)
+#All following rows contain features that have a known implication in drug sensitivity and a 1 at the corresponding column index and 0 otherwise.

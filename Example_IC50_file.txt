@@ -1,0 +1,8 @@
+drug_name
+c_1	1.612711
+c_2	5.344976
+c_3	3.220232
+c_4	5.172157
+c_5	1.751784
+#Delete the rows starting with '#' if you want to use this file as an example file.
+#First row contains the drug drug_name, other rows contain the cell line identifier and the observed ic50 value (tab-separated).

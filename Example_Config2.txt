@@ -1,0 +1,13 @@
+ File	<path_to_data_matrix> #file with data matrix used to perform the CV (see Example_Data_Matrix.txt)
+ Directory	<output_directory> #output directory
+ M1	5 #M1 and M2 must be equal, can be any positive integer 
+ M2	5
+ L1	0 #ignore parameter
+ L2	0 #ignore parameter
+ WeightFunction	quadratic #weight function used to calculate the weights in the objective function, options are 'linear', 'quadratic', and 'cubic'
+ ErrorFunction	misclassification #use misclassification as default, other error functions are calculated anyway (default output: objective function value, misclassification rate, sensitivity, specificity, true positives, true negatives, false positives, and false negatives) 
+ Threshold	2.98825356004621 #IC50 threshold for current drug
+ IC50ValueFile	<path_to_ic50value_file> #file with ic50 values for considered drug (see Example_IC50_file.txt)
+ CVMode	fold #by using CVMode fold a CV is performed using the number of folds given as argument of the C++ executable (cf. README.md)
+ alpha	0 #ignore parameter
+ preselected_features	<path_to_apriori_knowledge_file> #file with pre-selected features if there is a priori knowledge for a drug (see Example_Preselected_Features.txt)

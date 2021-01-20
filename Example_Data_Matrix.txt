@@ -1,0 +1,9 @@
+ f_1 f_2 f_3 w r 
+ c_1 1 1 1 0.1 1
+ c_2 1 0 0 0.5 1
+ c_3 1 1 0 0.4 1
+ c_4 0 0 1 0.7 0 
+ c_5 0 0 0 0.3 0
+#Delete the rows starting with '#' if you want to use this file as an example file.
+#The columns correspond to features, the last column is the binarized drug response, the second last column represents weights. The weight column is actually not used if not specifically descired by the user. Rather the weights are calculated based on the additional ic50 value file for the drug and the specified weight function.
+#The rows correspond too the cell lines.
