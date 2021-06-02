@@ -1,5 +1,10 @@
 
+## MERIDA
 
+Welcome to the GitHub page of MERIDA (MEthod  for  Rule Identification  with multi-omics  DAta), a tool for drug sensitivity prediction in cancer.
+
+For issues and questions, please contact Kerstin Lenhof (klenhof[at]bioinf.uni-sb.de)
+If you use MERIDA or the code in this repository, please cite out paper
 
 ## Installation
 To install MERIDA, you need to have the following programs/libraries installed:
@@ -12,7 +17,7 @@ and issue cmake:
 
 mkdir build
 cd build
-cmake -DEIGEN_PATH="/usr/include/eigen3" -DCPLEX_PATH="/share/data/opt/opt/cplex1262" ..
+cmake -DEIGEN_PATH=/path/to/eigen3 -DCPLEX_PATH=/path/to/cplex ..
 
 
 ## Usage

@@ -77,6 +77,8 @@ public:
         }
 
         //Randomly shuffle data because it could be ordered
+        //Explicitly use random seed 1 for srand, which is also the default if no random seed is given
+        std::srand(1);
         std::vector <unsigned int> indices(number_of_samples);
         unsigned int count{0};
         for(auto& i : indices){
