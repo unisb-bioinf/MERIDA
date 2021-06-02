@@ -1,0 +1,38 @@
+#Author:Kerstin Lenhof
+#Date: 26.05.2021
+Instructions for using the code to generate the input  matrices employed in the MERIDA method. 
+More detailed information on all used versions of all data sets and databases can be found in the Supplement S1 of the paper.
+If you have questions, contact Kerstin Lenhof (klenhof@bioinf.uni-sb.de).
+
+1. The available cell lines per drug can be generated using the script 'find_available_cell_lines.py'.
+Needed files: 
+- Mutation file 
+- CNV file 
+- Gene Expression file
+- Drug response directory 
+
+2. The test set can then be drawn from the available cell lines stratified with respect to the tissue (site) using the script 'draw_stratified_test_set.R'
+Needed files:
+- Annotation files for  the 'site' feature from GDSC
+
+3. The z-score matrices can then be calculated depending on the drawn test set (using the script 'z_score_calculation_train_test_separated.py'). 
+
+4. The resulting z-scores can be binarized using the script 'z_score_binarization.R'.
+
+5. Annotation files for copy number and mutations can be generated using the script "preprocess_mut_cnv.py".
+Needed files:
+- Files from the 'Oncogenicity_Annotation'-folder
+- Files from the 'Sensitivity_Annotation'-folder
+- Files from the 'Mapping_Facility'-folder
+- Mutation file 
+- CNV file 
+
+6. The data for the drugs was merged using the script 'unite_matrices.R' (Mut & CNV + GE + Drug Response). For drugs with a priori knowledge from the annotation step, 2 matrices have to be calculated (one with a priori knowledge and one without).
+Needed files:
+- GDSC1 & GDSC2 discretized response matrices
+
+7. The final training and test set matrices are generated with 'subset_matrices.R'
+
+
+To prepare the oncogenicity and sensitivity annotation files files from the 'Preparation_of_Databases' folder can be used.
+At first the scripts with the database names (COSMIC, oncoKB, CIViC, CGI) in the file name should be used. Then the two mapper scripts can be used.
